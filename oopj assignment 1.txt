@@ -1,0 +1,129 @@
+OOPJ Assignment 1
+
+
+ 1)Write a program that takes a numerical grade as input and outputs the corresponding letter grade using if-else statements. 
+
+  class Grade{
+public static void main(String args){
+
+int numGrade = 85;
+char lettGrade;
+
+if (numGrade >= 90) {
+    lettGrade = 'A';
+} else if (numGrade >= 80) {
+    lettGrade = 'B';
+} 
+System.out.println("Letter Grade: " + lettGrade);
+}
+}
+
+
+
+
+  2)Write a program that checks if a given year is a leap year or not using both if-else and switch-case. 
+
+
+  class Leap{
+public static void main(String args){
+
+int year = 2024;
+
+if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+    System.out.println(year + " is a leap year.");
+} else {
+    System.out.println(year + " is not a leap year.");
+}
+}
+
+
+
+
+  3)Implement a simple calculator program that takes two numbers and an operator (+, -, *, /) as input and performs the operation using switch-case.
+
+
+  class Operation{
+public static void main(String args){
+
+double n1 = 10;
+double n2 = 5;
+char operator = '+';
+double result;
+
+switch (operator) {
+    case '+':
+        result = n1 + n2;
+        break;
+    case '-':
+        result = n1 - n2;
+        break;
+    case '*':
+        result = n1 * n2;
+        break;
+    case '/':
+        result = n1 / n2;
+        break;
+    default:
+        System.out.println("Invalid operator");
+        return;
+}
+System.out.println("Result: " + result);
+
+
+
+  4)Write a program that takes a number representing a weekday (1-7) and prints the name of the weekday using switch-case
+
+  class Day{
+public static void main(String args){
+
+int day = 3;
+String dayName;
+
+switch (day) {
+    case 1:
+        dayName = "Monday";
+        break;
+   
+}
+System.out.println("Day: " + dayName);
+}
+}
+
+
+
+  5)Write a program that takes a character as input and determines whether it s a vowel or a consonant using if-else. 
+
+  class Check{
+public static void main(String args){
+
+char ch = 'a';
+
+if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+    System.out.println(ch + " is a vowel.");
+} else {
+    System.out.println(ch + " is a consonant.");
+}
+}
+}
+
+
+
+  6)Implement a program that calculates the Body Mass Index (BMI) based on height and weight input using if-else to classify the BMI int categories        
+      (underweight, normal weight, overweight, etc.)
+
+ class Bmi{
+public static void main(String args){
+
+double weight = 70;
+double height = 1.75;
+double bmi = weight / (height * height);
+String category;
+
+if (bmi < 18.5) {
+    category = "Underweight";
+} else if (bmi < 25) {
+    category = "Normal weight";
+} 
+System.out.println("BMI Category: " + category);
+}
+}
