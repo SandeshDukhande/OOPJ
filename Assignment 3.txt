@@ -1,0 +1,54 @@
+1.Write a program that demonstrate widening conversion from int to double and print result
+
+class Cast{
+ public static void main(String[] args){
+ int myint=42;
+Double mydouble;
+mydouble=(double)myint;
+
+System.out.println("int value"+ myint);
+System.out.println("double value"+ mydouble);
+}
+}
+Output:
+            Int value: 42
+            Double value: 42.0
+
+
+2.create a program that demonstrate narrowing conversion from double to int and prints result.
+class Conversion{
+     
+    public static void main(String[] args) {
+         
+        
+        double billVal = 25.5;        
+        System.out.println("billval :"+ billVal);        
+        
+        int bill = (int) billVal;        
+             System.out.println(" Your  bill : "+bill+" ");
+         
+    }
+     
+}
+
+Output:
+billVal: 25.5
+ Your  bill : 25 
+
+3.write a program that performs arithmetic operations involving different data types(int,float,double)
+class AriData{
+  public static void main(String[] args){
+     int a=7, b=5;
+     double c= 6.0, d, e;
+     d = c+a / b;
+     e = a + c / b;
+     System.out.println(d);
+     System.out.println(e);
+}
+
+Output: 7.0
+        8.2
+        
+        
+
+
